@@ -3,7 +3,7 @@ import List from "./components/List";
 import { useState } from "react";
 import useDebounce from "./hooks/useDebounce";
 
-function App() {
+const App = () => {
   const [searchValue, setSearchValue] = useState("");
   const { debouncedValue } = useDebounce(searchValue, 1000);
 
